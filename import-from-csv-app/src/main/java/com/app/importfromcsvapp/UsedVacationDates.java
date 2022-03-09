@@ -1,13 +1,10 @@
 package com.app.importfromcsvapp;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Date;
 
 @Entity
-@Table(name = "used_vacation_dates")
+@Table(name = "used_vacation_dates") // TODO: set unique constraint or index
 public class UsedVacationDates {
     @Id
     @Column(name = "id")

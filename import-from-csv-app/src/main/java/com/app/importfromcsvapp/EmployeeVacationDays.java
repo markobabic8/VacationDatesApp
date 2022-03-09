@@ -1,12 +1,9 @@
 package com.app.importfromcsvapp;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "employee_vacation_days")
+@Table(name = "employee_vacation_days") // TODO: set unique constraint or index
 public class EmployeeVacationDays {
 
     @Id
